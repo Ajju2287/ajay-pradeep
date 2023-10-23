@@ -1,0 +1,292 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "poppins" , sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	min-height: 1000px;
+}
+
+html{
+	scroll-behavior: smooth;
+	transition: 0.7s;
+}
+
+header{
+	position: fixed;
+	/*background: #551A8B;*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px, 100px;
+	z-index: 1000;
+	transition: 0.6s;
+}
+
+header .logo{
+	position: relative;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s
+}
+
+header.sticky{
+	padding: 5px 100px;
+	background: #fff;
+}
+
+header ul{
+	position: relative;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li{
+	position: relative;
+	list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 300;
+    transition: 0.6px;
+}
+
+
+header.sticky .logo ,
+header.sticky ul li a{
+	color: #000;
+
+}
+
+.banner{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	background: url(bg.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner h2{
+	color: #fff;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1em;
+}
+
+.banner h2 span{
+	color: #4978ff;
+}
+
+.sec{
+    background: white;
+    padding: 100;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec .content{
+	position: relative;
+	text-align: center;
+	color: black;
+	font-weight: bolder;
+	width: 100%;
+}
+
+.mxw800{
+	max-width: 100%;
+	margin: 0 auto;
+}
+h3{
+	color: black;
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+p{
+	color: black;
+	position: relative;
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+}
+
+.btn a{
+	text-decoration: none;
+	color: white;
+
+	padding: 10px;
+	background: black;
+	border-radius: 2px;
+}
+
+.btn a:hover{
+	color: black;
+	background: grey;
+
+}
+
+.prod{
+	padding-top: 70px;
+}
+
+.services{
+	position: relative;
+	padding-top: 10px;
+	padding-left: none;
+	padding-right: none;
+    display: grid;
+    grid-gap: 70px;
+	grid-template-columns: 2fr 2fr 2fr;																																																																																																																																																																													
+	grid-template-rows: 5fr 5fr 5fr;
+	max-width: 100%;
+	margin-top: 50px;
+	margin-bottom: 73px;
+}
+
+.services .box{
+	width: 250px;
+	height: auto;
+	margin: 0 auto;
+	background: white;
+	padding-top: 55px;
+
+}
+
+.services ul li{
+	list-style: none;
+}
+
+.services .box h1{
+	font-size: 28px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.box{
+	width: auto;
+	height: auto;
+    
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: space-between;
+	margin-bottom: 20px;
+	border: 1px solid rgb(194, 22, 194);
+	border-radius: 20px;
+	transition: 0.6s;
+}
+
+.box:hover{
+	border-bottom: 15px solid  rgb(194, 22, 194);
+	border-radius: 30px;
+	transition: 0.6s;
+}
+
+.contact{
+	background: black;
+	padding-top: 70px;
+}
+
+.contact h2,
+.contact p{
+	color: white;
+}
+
+.contactform{
+	position: relative;
+	max-width: 800;
+	margin: 0 auto;	
+	display: flex;
+}
+
+.contactform form{
+	width: 100%;
+}
+.contactform .row100{
+	display: flex;
+	width: 100%;
+}
+
+.contactform .row100 .inputbx50{
+	width: 50%;
+	margin: 0 20px;
+}
+
+.contactform .row100 .inputbx100{
+	width: 100%;
+    margin: 0 20px;
+}
+
+.contactform .row100 input,
+.contactform .row100 textarea{
+	position: relative;
+	color: white;
+    border: none;
+	background: transparent;
+	width: 100%;
+	padding: 10px 0;
+	outline: none;
+	font-size: 19px;
+	font-weight: 300;
+	margin: 20px 0;
+	resize: none;
+
+}
+
+.contactform .row100 textarea{
+	height: 100px;
+	border-bottom: 1px solid white;
+}
+
+.contactform .row100 input[type="submit"]{
+	background: white;
+	color: black;
+	max-width: 100px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	cursor: pointer;
+	font-weight: 500;
+	border-radius: 3.5px;
+	transition: 0.6s;
+}
+
+.contactform .row100 input[type="submit"]:hover{
+	background: #000;
+	color: white;
+	border: none;
+	transition: 0.4s;
+}
+
+.inputbx50 .ds{
+	color: white;
+	display: flex;
+	font-weight: 100;
+}
